@@ -1,0 +1,123 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<!--
+		CGS1821
+		Final Project
+			
+		Author: Joseph Hart
+		
+		File Name: women.html
+		Supporting Files: styles.css
+		-->
+	<meta charset="utf-8">
+	<title>Women's Shirts - Earth2Mars</title>
+	<link rel="stylesheet" href="styles.css">
+	<!-- This is the jscript that makes the form reveal under the tables -->
+	<script type="text/javascript"> 
+		<!--
+			function showform1(){
+				document.getElementById('testform1').style.display = "block";
+			}
+			function hideform1(){
+				document.getElementById('testform1').style.display = "none";
+			}
+			
+			function showform2(){
+				document.getElementById('testform2').style.display = "block";
+			}
+			function hideform2(){
+				document.getElementById('testform2').style.display = "none";	
+			}
+			
+			function showform3(){
+				document.getElementById('testform3').style.display = "block";
+			}
+			function hideform3(){
+				document.getElementById('testform3').style.display = "none";
+			}
+		 //-->
+	</script>
+</head>
+	
+<body>
+	<div id="wrapper">
+		<header>
+				<img id="banner" src="images/banner.jpg" alt="banner"/>
+				<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="men.html">Men's</a></li>
+					<li><a href="women.html">Women's</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			</header>		
+		<h2>Women's Shirts</h2>
+		<!-- This table displays my product -->
+		<table id="tableproduct">
+		<tr>
+			<th>Gators - $15.00</th>
+			<th>Mother Earth - $17.00</th>
+			<th>Boobs - $15.00</th>
+		</tr>
+		<!-- This row is where the onmouseout and onmouseover commands link the jscript to the HTML -->
+		<tr>
+			<td><img  src="images/gators.jpg" alt="gators.jpg" onmouseover="showform1();"></td>
+			<td><img  src="images/motherearth.jpg" alt="motherearth.jpg" onmouseover="showform2();"></td>
+			<td><img  src="images/boobs.jpg" alt="boobs.jpg" onmouseover="showform3();"></td>
+		</tr>
+		<tr>
+			<td><form  id="testform1" action="mailto:mail@this.com" method="post" enctype="text/plain">
+				<fieldset class="inputarea">
+						<label>Choose size: </label><br />
+						<input type="radio" class="radioinput" id="small1" name="women" value="sizeofsmall" checked="checked" />
+						<label class="radiolabel">Small</label><br />
+						<input type="radio" class="radioinput" id="medium1"  name="women" value="sizeofmedium" />
+						<label class="radiolabel">Medium</label><br />
+						<input type="radio" class="radioinput" id="large1" name="women" value="sizeoflarge" />
+						<label class="radiolabel">Large</label><br />
+						<label class="label" >Choose quantity:</label>
+						<input type="text"  />
+						<input type="submit" name="submitx" value="Submit" onmouseout="hideform1();">
+						<input type="reset" name="resetx" value="Reset">
+					</fieldset>
+			</form></td>
+			<td><form  id="testform2" action="mailto:mail@this.com" method="post" enctype="text/plain">
+				<fieldset class="inputarea">
+						<label>Choose size: </label><br />
+						<input type="radio" class="radioinput" name="women" value="sizeofsmall" checked="checked" />
+						<label>Small</label><br />
+						<input type="radio" class="radioinput" name="women" value="sizeofmedium" />
+						<label>Medium</label><br />
+						<input type="radio" class="radioinput"  name="women" value="sizeoflarge" />
+						<label>Large</label><br />
+						<label>Choose quantity:</label>
+						<input type="text"  />
+						<input type="submit" name="submit" value="Submit" onmouseout="hideform2();">
+						<input type="reset" name="resetx" value="Reset">
+					</fieldset>
+			</form></td>
+			<td><form  id="testform3" action="mailto:mail@this.com" method="post" enctype="text/plain">
+				<fieldset class="inputarea">
+						<label>Choose size: </label><br />
+						<input type="radio" class="radioinput" name="women" value="sizeofsmall" checked="checked" />
+						<label>Small</label><br />
+						<input type="radio" class="radioinput" name="women" value="sizeofmedium" />
+						<label>Medium</label><br />
+						<input type="radio" class="radioinput" name="women" value="sizeoflarge" />
+						<label>Large</label><br />
+						<label>Choose quantity:</label>
+						<input type="text"  />
+						<input type="submit" name="submitx" value="Submit" onmouseout="hideform3();">
+						<input type="reset" name="resetx" value="Reset">
+					</fieldset>
+			</form></td>
+		</tr>
+		</table>
+		<footer>
+		Copyright &copy; 2015 Joseph Hart
+		</footer>
+	</div>
+</body>
+</html>

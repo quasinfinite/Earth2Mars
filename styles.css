@@ -1,0 +1,204 @@
+/*
+	 Final Web Site CSS Sheet
+	Author: Joseph Hart
+	
+	File Name: styles.css
+*/
+
+header { background-color: #000000;
+			color: #000000;
+			padding: 5px;
+			height: 150px;
+			font-family: "Times New Roman", serif;
+			display: block;
+}
+
+header #banner { height: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+}
+
+nav {	height: 35px;
+			font-size: 1.1em;
+			background-color: #707070;
+			text-align: center;
+			display: block;
+}
+
+nav li {	background-color: #707070;
+		display: inline;
+}
+
+nav ul {	list-style-type: none;
+			padding: 5px;
+}
+
+nav a {	padding: 5px;
+}
+
+nav a:link { color: #c8c8c8; }
+nav a:visited { color:  #1d2988; }
+nav a:hover { color: #b23905; }
+
+body {	background-color: #000000;
+			font-family: Verdana, Arial, sans-serif;
+}
+
+
+figure {	text-align: center;
+		 padding: 0;
+		 margin-left: auto;
+		 margin-right: auto;
+		 width: auto;
+}
+
+article p {	text-align: center;
+		 margin-left: auto;
+		 margin-right: auto;
+		 width: 80%;
+}
+
+p {	text-indent: 50px;
+}
+
+h2 {	text-align: center;
+		padding: 5px;
+		margin-top: 50px;
+}
+
+h3 { text-align: center;
+}
+
+h4 { text-align: center;
+		margin: 0px;
+}
+
+p.contactp { padding: 1px;
+		text-indent: 5px;
+		text-align: center;
+		margin: 0px;
+}
+
+p.leftp { text-align: left;
+		text-indent: 5px;
+		margin: 0px;
+		padding: 1px;
+}
+
+tr th {	font-size: 0.7em;
+		padding: 0px;
+}
+
+footer { 	color: #000000;
+			font-size: 0.7em;
+			font-style: italic;
+			text-align: center;
+			padding: 10px; 
+}
+
+#wrapper {	margin-left: auto;
+			margin-right: auto;
+			width: 96%;
+			min-width: 700px;
+			background-color: #707070;
+}
+
+#buttons {	width: 150px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+#sale {	color: #A80000;
+		font-size: xx-large;
+		width: 100%;
+		text-align: center;
+		letter-spacing: 2px;
+		margin-bottom: 5px;
+		margin-top: 50px;
+}
+
+#fname, #lname, #email, #pnumber {	display: block;
+		padding-bottom: 5px;
+		width: 225px;
+}
+
+#submit, #reset { display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90px;
+}
+
+#message {	display: block;
+		width: 90%;
+}
+
+#username {	padding-left: 10px;
+}
+
+#left {	float: left;
+		display: block;
+		width: 200px;
+		margin-top: 15px;
+}
+
+#left p {	margin: 5px;
+		padding-left: 5px;
+		text-align: initial;
+}
+
+#contactform {	width: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+#contactright {	display: block;
+		float: right;
+		width: 200px;
+		height: 400px;
+		margin-top: 15px;
+}
+
+#testform1, #testform2, #testform3 { display: none;
+}
+
+#tableproduct { width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+
+#contactright ul { list-style-type: none;
+}
+
+
+#quantity {	width: 50px;
+}
+
+.radioinput { display: inline-block;
+		margin-left: 25px;
+} 
+
+.about h3 {	text-align: center;
+}
+
+.product h3 {	text-align: center;
+}
+
+.bottomtable {	width: 700px;
+		text-align: center;
+}
+
+.inputarea {	width: 200px;
+}
+
+.buttonstyle { color: #000000;
+		border-radius: 4px;
+		background-color: #b23905;
+		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+li.bold { font-weight: bold;
+}

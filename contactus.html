@@ -1,0 +1,68 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<!--
+			CGS1821
+			Final Project
+				
+			Author: Joseph Hart
+			
+			File Name: contactus.html
+			Supporting Files: styles.css
+			-->
+		<meta charset="utf-8">
+		<title>Contact Us - Earth2Mars</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<img id="banner" src="images/banner.jpg" alt="banner"/>
+				<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="men.html">Men's</a></li>
+					<li><a href="women.html">Women's</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			</header>
+			<div id="contactright">
+				<h4>Mailing Address:</h4>
+				<p class="contactp">123 Beach Way</p>
+				<p class="contactp">Merritt Island, FL 32952</p>
+				<h4>Phone Number:</h4>
+				<p class="contactp">1-888-555-5555</p>
+				<h4>Email:</h4>
+				<p class="contactp">email.this.com</p>
+				<h4>Office Hours:</h4>
+				<p class="contactp">9 A.M. to 5 P.M.</p>
+			</div>
+			<article id="left">
+			<h4>Feedback</h4>
+			<p class="leftp"> Earth2Mars deeply values our customers input. Please, feel free to use the form provided to send a message about your experience. </p>
+			</article>
+			<h2>Contact Us</h2>
+			<form id ="contactform" action="mailto:mail@this.com" method="post" enctype="text/plain">
+				<fieldset>
+				<label for="fname">First Name:</label> 
+				<input type="text"  name="fnamex" id ="fname" placeholder="first name" autofocus required>
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" name="lnamex" placeholder="last name" required>
+				<label for="email">Email Address:</label>
+				<input type="email" id="email" name="emailx" placeholder="name@domain.com" required>
+				<label for="pnumber">Phone Number: </label>
+				<input type="tel" id="pnumber" name="pnumberx" placeholder="(555) 555-5555" required>
+				<label for="message">Peronalized Message:</label>
+				<textarea name="messagex" id="message"></textarea>
+				<input type="submit" name="submitx" id="submit" value="Submit">
+				<input type="reset" name="resetx" id="reset" value="Reset Form">
+				</fieldset>
+			</form>
+			<footer>
+			Copyright &copy; 2015 Joseph Hart
+			</footer>
+		</div>
+	</body>
+</html>

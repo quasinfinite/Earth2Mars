@@ -1,0 +1,90 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<!--
+			CGS1821
+			Final Project
+				
+			Author: Joseph Hart
+			
+			File Name: index.html
+			Supporting Files: styles.css
+			-->
+		<meta charset="utf-8">
+		<title>Home Page - Earth2Mars</title>
+		<link rel="stylesheet" href="styles.css">
+		<!-- This is my javascript for the slideshow -->
+		<script type="text/javascript"> 
+			<!--
+				var tshirtSlides = new Array(); 
+				tshirtSlides[0] = new Image(); 
+				tshirtSlides[1] = new Image(); 
+				tshirtSlides[2] = new Image(); 
+				tshirtSlides[3] = new Image(); 
+				tshirtSlides[4] = new Image(); 
+				tshirtSlides[5] = new Image(); 
+				
+				tshirtSlides[0].src ="images/earth.jpg"; 
+				tshirtSlides[1].src ="images/marsbros.jpg"; 
+				tshirtSlides[2].src ="images/bigred.jpg"; 
+				tshirtSlides[3].src ="images/gators.jpg"; 
+				tshirtSlides[4].src ="images/motherearth.jpg"; 
+				tshirtSlides[5].src ="images/boobs.jpg";
+				
+			 var slidenum = 0;
+			 var totalslides = tshirtSlides.length-1; 
+			 function showSlide(direction) 
+				{ 
+				if (direction == "next") 
+					{ 
+					(slidenum == totalslides) ? slidenum =0 : slidenum ++; 
+					} 
+					else
+					{ 
+					(slidenum == 0) ? slidenum = totalslides : slidenum --; 
+					} 
+					if (document.images) 
+					{ 
+					document.slideframe.src = tshirtSlides[slidenum].src; 
+					} 
+				}
+			 //-->
+		</script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+		<header>
+				<img id="banner" src="images/banner.jpg" alt="banner"/>
+				<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="men.html">Men's</a></li>
+					<li><a href="women.html">Women's</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			</header>
+			<!-- the HTML side of the javascript code -->
+			<article>
+			<h2>New Arrivals</h2>
+			<form name="slidecontrols">
+						<figure><img src="images/earth.jpg"  name="slideframe" width="225" height="225" alt="slide show" />
+						</figure>
+						<div id="buttons">
+						<input type="button" class="buttonstyle" value ="Previous" onclick = "showSlide('previous');"> 
+						<input type ="button" class="buttonstyle" value ="Next" onclick = "showSlide('next');"> 
+						</div>
+			</form>	
+			</article>
+			<article>
+				<h3>About Earth2Mars</h3>
+				<p>The Earth2Mars supports the notion that expanding the human experience to Mars is essential to furthering ourselves as a species. Earth2Mars hopes to bring this idea to the forefront of society through style. </p>
+				<p>Materials are also very important to us at Earth2Mars. A percentage of every purchase goes to support organic farms around the nation. A number of the farms we help support happen to grow cotton. We use this relationship with farmers to provide specially grown, organic cotton with which we use to make these shirts.</p>
+			</article>			
+			<footer>
+			Copyright &copy; 2015 Joseph Hart
+			</footer>
+		</div>
+	</body>
+</html>
